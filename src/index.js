@@ -2,11 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Header from './Header';
+import CounterList from "./CounterList";
+import Counter from "./Counter";
 import reportWebVitals from './reportWebVitals';
+
+
+const data = {
+  counters: 5
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <App data ={data} />
+    
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
